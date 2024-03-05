@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Викторина</title>
+</head>
+<body>
+	<h1>Ответь на мои вопросы:</h1>
+
+	<form id="main-form" onsubmit="return checkForm(this)" method="post">
+	
+	<!--начало вопроса-->	
+	<span>Столица Китая </span>
+	<br><br>
+	<input type="radio" name="v1" value="Пекин">
+	<label>Пекин</label>
+	<input type="radio" name="v1" value="Пермь">
+	<label>Пермь</label>
+	<input type="radio" name="v1" value="Москва">
+	<label>Москва</label>
+	<input type="radio" name="v1" value="Токио">
+	<label>Токио</label>
+	<br>
+	<div id="rez1" style="color: red"></div>
+	<!--конец вопроса-->
+
+	<!--начало вопроса-->
+	<br><br>	
+	<span>Сколько будет 2*2*2 </span>
+	<br><br>
+	<input type="radio" name="v2" value="2">
+	<label>2</label>
+	<input type="radio" name="v2" value="4">
+	<label>4</label>
+	<input type="radio" name="v2" value="6">
+	<label>6</label>
+	<input type="radio" name="v2" value="8">
+	<label>8</label>
+	<br>
+	<div id="rez2" style="color: red"></div>
+	<!--конец вопроса-->
+
+	<input type="submit" name="submit" value="Готово">
+	<div id="itog" style="color: blue"></div>
+
+	</form>
+
+	<script src="../js/viktorina.js"></script>
+
+</body>
+</html>
